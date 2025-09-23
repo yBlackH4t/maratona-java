@@ -1,4 +1,6 @@
-package br.com.maratonajava.javacore.Bintroducaometodos.domain;
+package br.com.maratonajava.javacore.Bintroducaometodos.test;
+
+import br.com.maratonajava.javacore.Bintroducaometodos.domain.Funcionario;
 
 public class ImprimirDados {
     public static void main(String[] args) {

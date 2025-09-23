@@ -3,7 +3,7 @@ package br.com.maratonajava.javacore.Eblocosdeinicializacao.domain;
 
 public class Jogos {
     private String nome;
-    private int[] colecao = {1, 2, 3, 4, 5, 6, 7, 8};
+    private int[] colecoes;
 
     // 1° - Aloca um espaço em memória
     // 2° - Cada atributo de classe é criado e inicializado com valores default ou o que for passado
@@ -12,9 +12,9 @@ public class Jogos {
 
     {
         System.out.println("Dentro do bloco de inicilizacao");
-        colecao = new int[100];
-        for (int i = 0; i < colecao.length; i++) {
-            colecao[i] = i+1;
+        colecoes = new int[100];
+        for (int i = 0; i < colecoes.length; i++) {
+            colecoes[i] = i + 1;
         }
     }
 
@@ -23,14 +23,14 @@ public class Jogos {
     }
 
     public Jogos() {
-        for (int colecao : this.colecao) {
+        for (int colecao : this.colecoes) {
             System.out.print(colecao + " ");
         }
         System.out.println();
     }
 
-    public int[] getColecao() {
-        return colecao;
+    public int[] getColecoes() {
+        return colecoes;
     }
 
     public String getNome() {

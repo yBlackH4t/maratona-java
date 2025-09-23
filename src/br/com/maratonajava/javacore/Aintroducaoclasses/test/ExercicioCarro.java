@@ -1,6 +1,6 @@
 package br.com.maratonajava.javacore.Aintroducaoclasses.test;
 
-import br.com.maratonajava.javacore.Aintroducaoclasses.dominio.Carro;
+import br.com.maratonajava.javacore.Aintroducaoclasses.domain.Carro;
 
 public class ExercicioCarro {
     public static void main(String[] args) {
