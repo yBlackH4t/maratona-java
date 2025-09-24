@@ -6,7 +6,7 @@ public class Jogador {
 
     public void imprime() {
         System.out.println("Nome: " + this.nome);
-        System.out.println("Time: " + (time != null ? time.getNome() : "Sem time"));
+        System.out.println(time != null ? time.getNome() : "Sem time");
     }
 
     public Jogador(String nome) {
