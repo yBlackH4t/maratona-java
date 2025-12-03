@@ -12,16 +12,14 @@ public class HerancaTest01 {
         endereco.setBairro("Bairro 2");
         endereco.setCidade("Cidade 3");
 
-        Pessoa pessoa = new Pessoa();
-        pessoa.setNome("João");
+        Pessoa pessoa = new Pessoa("Neymar");
         pessoa.setIdade(20);
         pessoa.setEndereco(endereco);
         pessoa.imprime();
 
         System.out.println("----HERANÇA----");
 
-        Funcionario funcionario = new Funcionario();
-        funcionario.setNome("Maria");
+        Funcionario funcionario = new Funcionario("Guilherme");
         funcionario.setIdade(30);
         funcionario.setSalario(2000);
         funcionario.setEndereco(endereco);
