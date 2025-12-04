@@ -5,9 +5,23 @@ public class Pessoa {
     protected int idade;
     protected Endereco endereco;
 
+    static {
+        System.out.println("Pessoa inicializado no bloco Estatico");
+    }
+
+    {
+        System.out.println("Pessoa inicializado no bloco inicialização 01");
+    }
+
+    {
+        System.out.println("Pessoa inicializado no bloco inicialização 02");
+    }
+
     public Pessoa(String nome) {
+        System.out.println("Dentro do  construtor Pessoa");
         this.nome = nome;
     }
+
     public Pessoa(String nome, int idade) {
         this.nome = nome;
         this.idade = idade;

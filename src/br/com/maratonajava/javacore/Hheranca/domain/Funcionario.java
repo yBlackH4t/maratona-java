@@ -3,16 +3,29 @@ package br.com.maratonajava.javacore.Hheranca.domain;
 public class Funcionario extends Pessoa {
     private double salario;
 
-    public Funcionario(String nome) {
-        super(nome);
+    static {
+        System.out.println("Funcionario inicializado no bloco Estatico");
     }
 
-    public void imprime(){
+    {
+        System.out.println("Funcionario inicializado no bloco inicialização 01");
+    }
+
+    {
+        System.out.println("Funcionario inicializado no bloco inicialização 02");
+    }
+
+    public Funcionario(String nome) {
+        super(nome);
+        System.out.println("Dentro do construtor Funcionario");
+    }
+
+    public void imprime() {
         super.imprime();
         System.out.println(this.salario);
     }
 
-    public void relatorioPagamento(){
+    public void relatorioPagamento() {
         System.out.println("Eu " + this.nome + " declaro que recebi meu salrio no valor de: " + this.salario);
     }
 
