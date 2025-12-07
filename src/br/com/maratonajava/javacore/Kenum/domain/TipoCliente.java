@@ -12,6 +12,15 @@ public enum TipoCliente {
         this.descricao = descricao;
     }
 
+    public static TipoCliente tipoClientePorAtributo(String descricao){
+        for (TipoCliente v : values()) {
+            if (v.getDescricao().equals(descricao)){
+                return v;
+            }
+        }
+        return null;
+    }
+
     public int getCodigo() {
         return codigo;
     }
