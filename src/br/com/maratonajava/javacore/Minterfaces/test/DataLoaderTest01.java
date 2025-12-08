@@ -1,0 +1,15 @@
+package br.com.maratonajava.javacore.Minterfaces.test;
+
+import br.com.maratonajava.javacore.Minterfaces.domain.DataBaseLoader;
+import br.com.maratonajava.javacore.Minterfaces.domain.FileLoader;
+
+public class DataLoaderTest01 {
+    public static void main(String[] args) {
+
+        DataBaseLoader dataBaseLoader = new DataBaseLoader();
+        FileLoader fileLoader = new FileLoader();
+        dataBaseLoader.load();
+        fileLoader.load();
+
+    }
+}
