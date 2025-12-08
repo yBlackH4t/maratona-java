@@ -1,6 +1,7 @@
 package br.com.maratonajava.javacore.Minterfaces.test;
 
 import br.com.maratonajava.javacore.Minterfaces.domain.DataBaseLoader;
+import br.com.maratonajava.javacore.Minterfaces.domain.DataLoader;
 import br.com.maratonajava.javacore.Minterfaces.domain.FileLoader;
 
 public class DataLoaderTest01 {
@@ -10,6 +11,15 @@ public class DataLoaderTest01 {
         FileLoader fileLoader = new FileLoader();
         dataBaseLoader.load();
         fileLoader.load();
+
+        dataBaseLoader.remove();
+        fileLoader.remove();
+
+        dataBaseLoader.checkPermission();
+        fileLoader.checkPermission();
+
+        DataLoader.retriveMaxDataLoader();
+        DataBaseLoader.retriveMaxDataLoader();
 
     }
 }

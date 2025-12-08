@@ -1,10 +1,19 @@
 package br.com.maratonajava.javacore.Minterfaces.domain;
 
-public class FileLoader implements DataLoader{
+public class FileLoader implements DataLoader, DataRemove{
 
     @Override
     public void load() {
         System.out.println("Carregando dados de um arquivo");
+    }
+
+    @Override
+    public void remove() {
+        System.out.println("Removendo dados de um arquivo");
+    }
+
+    public void checkPermission() {
+        System.out.println("Checando permissao dos arquivos");
     }
 
 }
